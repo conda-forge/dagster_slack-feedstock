@@ -1,13 +1,13 @@
 {% set name = "dagster_slack" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b4e8621ea99df5a058ff9ce340c9ce684db86c0dbecb7aa7556affcc01a52871
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 9aa4dcf233c771727fe36f3644137f6bcf48039e4495e467b10df276410f776b
 
 build:
   number: 0
